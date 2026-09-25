@@ -1,0 +1,21 @@
+First priority: understand the problem statement and evaluation metric completely before coding. We should identify the data modality, target, constraints, and exactly what the metric rewards.
+
+Day 1: We all work in parallel. I’ll focus on understanding the dataset, setting up the common Kaggle notebook, EDA, validation split, and a strong baseline.
+Member 2: focus on preprocessing + feature engineering and identify suitable pretrained/Hugging Face models.
+Member 3: focus on alternative model architectures/loss functions and test them against the same validation setup.
+
+Every experiment should be tracked with model, preprocessing, validation strategy, metric, seed, training time, and result. We should not say something works just because it improves the public leaderboard; we need to reproduce it locally/on our validation setup first.
+
+Day 2: Once we identify what actually works, we stop randomly exploring and focus on improving those approaches. We can try better models, tuning, preprocessing, loss functions, or post-processing only where the experiments justify it.
+
+Day 3: No major new ideas unless absolutely necessary. Focus on ensemble, inference optimization, reproducibility, final validation, documentation, and submission checks.
+
+Since we are only 3, we should avoid duplicating work. Let’s maintain one master notebook and a shared experiment log. Everyone can experiment separately and then we integrate only the approaches that show a measurable improvement.
+
+Also, let’s not blindly chase the public leaderboard. The private leaderboard is what matters, so our validation strategy and reproducibility are more important than a temporary public LB boost.
+
+Finally, let’s keep the implementation efficient because the dataset is large. We shouldn’t immediately jump to huge models. Start with a reliable baseline, understand where it fails, and then introduce complexity only when there is evidence that it helps.
+
+Our goal for the 72 hours: understand → baseline → parallel experiments → select promising approaches → refine → ensemble → reproduce → submit.
+
+Since we’re 3 people, communication is going to be critical. Every time someone gets a result, post what you changed + validation metric + training time + what you learned, not just “this model is better.”
