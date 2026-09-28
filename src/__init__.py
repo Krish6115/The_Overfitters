@@ -31,6 +31,7 @@ from src.calibration import (
     CountryAwareCalibrator,
 )
 from src.bipartite_matching import BipartiteMatchingSolver
+from src.postprocessing import PrecisionOptimizer
 
 __version__ = "1.0.0"
 
@@ -58,4 +59,5 @@ __all__ = [
     "sweep_optimal_threshold",
     "CountryAwareCalibrator",
     "BipartiteMatchingSolver",
+    "PrecisionOptimizer",
 ]
