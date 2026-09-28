@@ -1,0 +1,28 @@
+"""
+Multilingual Entity Resolution & Record Linkage Engine
+======================================================
+High-precision entity matching across heterogeneous data sources.
+"""
+
+from src.config import Config, default_config
+from src.preprocessing import (
+    base_clean,
+    canonicalize_business_name,
+    canonicalize_address,
+    extract_numbers,
+    is_non_latin,
+    preprocess_entity_dataframe,
+)
+
+__version__ = "1.0.0"
+
+__all__ = [
+    "Config",
+    "default_config",
+    "base_clean",
+    "canonicalize_business_name",
+    "canonicalize_address",
+    "extract_numbers",
+    "is_non_latin",
+    "preprocess_entity_dataframe",
+]
