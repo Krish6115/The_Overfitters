@@ -25,6 +25,11 @@ from src.features import (
     generate_candidate_features,
 )
 from src.model import EntityMatchingModel
+from src.calibration import (
+    compute_macro_f05,
+    sweep_optimal_threshold,
+    CountryAwareCalibrator,
+)
 
 __version__ = "1.0.0"
 
@@ -48,4 +53,7 @@ __all__ = [
     "build_entity_lookup",
     "generate_candidate_features",
     "EntityMatchingModel",
+    "compute_macro_f05",
+    "sweep_optimal_threshold",
+    "CountryAwareCalibrator",
 ]
