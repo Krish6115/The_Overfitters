@@ -30,6 +30,7 @@ from src.calibration import (
     sweep_optimal_threshold,
     CountryAwareCalibrator,
 )
+from src.bipartite_matching import BipartiteMatchingSolver
 
 __version__ = "1.0.0"
 
@@ -56,4 +57,5 @@ __all__ = [
     "compute_macro_f05",
     "sweep_optimal_threshold",
     "CountryAwareCalibrator",
+    "BipartiteMatchingSolver",
 ]
