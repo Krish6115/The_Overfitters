@@ -14,6 +14,16 @@ from src.preprocessing import (
     preprocess_entity_dataframe,
 )
 from src.blocking import Blocker, sparse_topk
+from src.features import (
+    lev_ratio,
+    token_sort_ratio,
+    token_set_ratio,
+    token_jaccard,
+    char_jaccard,
+    extract_features_for_pairs,
+    build_entity_lookup,
+    generate_candidate_features,
+)
 
 __version__ = "1.0.0"
 
@@ -28,4 +38,12 @@ __all__ = [
     "preprocess_entity_dataframe",
     "Blocker",
     "sparse_topk",
+    "lev_ratio",
+    "token_sort_ratio",
+    "token_set_ratio",
+    "token_jaccard",
+    "char_jaccard",
+    "extract_features_for_pairs",
+    "build_entity_lookup",
+    "generate_candidate_features",
 ]
