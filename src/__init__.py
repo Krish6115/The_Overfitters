@@ -24,6 +24,7 @@ from src.features import (
     build_entity_lookup,
     generate_candidate_features,
 )
+from src.model import EntityMatchingModel
 
 __version__ = "1.0.0"
 
@@ -46,4 +47,5 @@ __all__ = [
     "extract_features_for_pairs",
     "build_entity_lookup",
     "generate_candidate_features",
+    "EntityMatchingModel",
 ]
