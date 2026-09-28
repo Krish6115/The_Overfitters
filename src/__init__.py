@@ -13,6 +13,7 @@ from src.preprocessing import (
     is_non_latin,
     preprocess_entity_dataframe,
 )
+from src.blocking import Blocker, sparse_topk
 
 __version__ = "1.0.0"
 
@@ -25,4 +26,6 @@ __all__ = [
     "extract_numbers",
     "is_non_latin",
     "preprocess_entity_dataframe",
+    "Blocker",
+    "sparse_topk",
 ]
